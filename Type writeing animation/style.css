@@ -1,1 +1,29 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,400;1,700&family=Special+Elite&display=swap');
 
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+font-family: 'Special Elite', cursive;
+}
+.type-writer{
+    box-sizing: border-box;
+    font-size: 3em;
+    border-right: 2px solid black;
+    width: 19ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing  3s steps(22),blink 0.5s step-end infinite alternate;
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
+@keyframes blink {
+    50%{
+        border: transparent;
+    }
+}
